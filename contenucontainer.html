@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Tout sur flex - Les containers</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" media="screen" charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <style type="text/css">@import "stylegeneral.css"; @import "stylecontenu.css";</style>
+  </head>
+  <body>
+
+    <header class="container">
+      <p>
+        <h3 class="titrenav">Display:flex;</h3>
+        <div class="container">
+          <ul class="container">
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a id="encours" href="#">Tout sur flex</a>
+                <ul>
+                  <li><a href="contenucontainer.html">Flex sur un container</a></li>
+                  <li><a href="contenuitems.html">Flex sur un item</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="ressources.html">Ressources</a>
+            </li>
+            <li>
+              <a href="Jeux.html">Exercices</a>
+            </li>
+          </ul>
+        </div>
+      </p>
+    </header>
+
+    <aside class="container" id="navBarre">
+      <div class="container">
+      <h4>Flex sur un container</h4>
+      <ul id="listeNonOrdonee">
+        <li class='elementListe'><a href="contenucontainer.html#display">display</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexdirection">flex-direction</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexwrap">flex-wrap</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexflow">flex-flow</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#justifycontent">justify-content</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#alignitems">align-items</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#aligncontent">align-content</a></li>
+      </ul>
+      <h4>Flex sur un item</h4>
+      <ul id="listeNonOrdonee">
+        <li class='elementListe'><a href="contenuitems.html#order">order</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexgrow">flex-grow</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexshrink">flex-shrink</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexbasis">flex-basis</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flex">flex</a></li>
+        <li class='elementListe'><a href="contenuitems.html#alignself">align-self</a></li>
+      </ul>
+      </div>
+      <button type="button" id="bouton1">>></button>
+      <button type="button" id="bouton2"><<</button>
+    </aside>
+
+    <h1>Flex sur un container</h1>
+    <article class="container">
+
+      <section class="container boitecontenu" id="display">
+        <h3>Display</h3>
+        <p class="pcontenu">
+          Display:flex permet "d'activer" le mode flex sur un container. Le container peut être tout type d'élément, que ce soit div, article, ul, li, etc.
+        </p>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">display: flex <span class="commentaire">/*ou*/</span> inline-flex <span class="commentaire">/*notamment utilisé si tout le site n'est pas en flex*/</span>;</div>
+                }
+          </div>
+        </div>
+      </section>
+
+      <section class="container boitecontenu" id="flexdirection">
+        <h3>Flex-direction</h3>
+        <p class="pcontenu">
+          Cette propriété que l'on applique au flex-container permet de choisir sa direction, en colonne (vertical) ou en rang (horizontal), en sens normal (de gauche à droite et de haut en bas) ou inversé (de droite à gauche et de bas en haut).
+        </p>
+
+        <div class="boitedemo container">
+          <div id="fDirection"class="demo"></div>
+          <div class="buttons">
+            <button type="button" class="flexColumn">column</button>
+            <button type="button" class="flexColumnReverse">column-reverse</button>
+            <button type="button" class="flexRow">row</button>
+            <button type="button" class="flexRowReverse">row-reverse</button>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">flex-direction: row <span class="commentaire">/*ou*/</span> row-reverse <span class="commentaire">/*ou*/</span> column <span class="commentaire">/*ou*/</span> column-reverse;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryFlexDirection.html"><button>Tester flex-direction !</button></a>
+        </p>
+      </section>
+
+      <section class="container boitecontenu container" id="flexwrap">
+        <h3>Flex-wrap</h3>
+        <p class="pcontenu">
+          Flex-wrap permet d'indiquer au conteneur si les items qu'il contient doivent automatiquement aller à la ligne ou non, dans le sens normal (les items qui débordent iront se placer en dessous) ou inversé (les items se placeront au dessus).
+        </p>
+
+        <div class="boitedemo container">
+          <div id="fWrap"class="demo"></div>
+          <div class="buttons">
+            <button type="button" class="nowrap">no-wrap</button>
+            <button type="button" class="wrap">wrap</button>
+            <button type="button" class="wrap-reverse">wrap-reverse</button>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">flex-wrap: wrap <span class="commentaire">/*ou*/</span> no-wrap <span class="commentaire">/*ou*/</span> wrap-reverse;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryFlexWrap.html"><button>Tester flex-wrap !</button></a>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="flexflow">
+        <h3>Flex-flow</h3>
+        <p class="pcontenu">
+          Flex-flow permet de déclarer en une seule ligne les valeurs de flex-direction et flex-wrap dans le CSS.
+        </p>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">flex-direction: valeur de flex-direction <span class="commentaire">/*et*/</span> valeur de flex-wrap;</div>
+                }
+          </div>
+        </div>
+      </section>
+
+      <section class="container boitecontenu" id="justifycontent">
+        <h3>Justify-content</h3>
+        <p class="pcontenu">
+          Cette propriété permet de modifier le positionnement vertical des items, mais aussi leur répartition dans l'espace du container.
+        </p>
+
+        <div class="boitedemo container">
+          <div id="fJustify"class="demo"></div>
+          <div class="buttons">
+            <button type="button" class="justifyStart">flex-start</button>
+            <button type="button" class="justifyEnd">flex-end</button>
+            <button type="button" class="center">center</button>
+            <button type="button" class="spaceB">space-between</button>
+            <button type="button" class="spaceA">space-around</button>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">justify-content: flex-start <span class="commentaire">/*ou*/</span> flex-end <span class="commentaire">/*ou*/</span> center <span class="commentaire">/*ou*/</span> space-around <span class="commentaire">/*ou*/</span> space-between;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryFlexJustify.html"><button>Tester justify-content !</button></a>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="alignitems">
+        <h3>Align-items</h3>
+        <p class="pcontenu">
+          Cette propriété permet de modifier le positionnement horizontal des items, mais aussi leur répartition dans l'espace du container.
+        </p>
+
+        <div class="boitedemo container">
+          <div id="fAlignI"class="demo"></div>
+          <div class="buttons">
+            <button type="button" class="alignStretch">stretch</button>
+            <button type="button" class="alignStart">flex-start</button>
+            <button type="button" class="alignEnd">flex-end</button>
+            <button type="button" class="alignCenter">center</button>
+            <button type="button" class="baseline">baseline</button>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">align-items: flex-start <span class="commentaire">/*ou*/</span> flex-end <span class="commentaire">/*ou*/</span> center <span class="commentaire">/*ou*/</span> baseline <span class="commentaire">/*ou*/</span> stretch;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryAlignItem.html"><button>Tester align-items !</button></a>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="aligncontent">
+        <h3>Align-content</h3>
+        <p class="pcontenu">
+          Quand il y a plusieurs lignes d'items dans le container, align-content permet de distribuer l'espace restant entre ces différentes lignes d'items.
+        </p>
+
+        <div class="boitedemo container">
+          <div id="fAlignC"class="demo"></div>
+          <div class="buttons">
+            <button type="button" class="contentStart">flex-start</button>
+            <button type="button" class="contentEnd">flex-end</button>
+            <button type="button" class="contentCenter">center</button>
+            <button type="button" class="contentB">space-between</button>
+            <button type="button" class="contentA">space-around</button>
+            <button type="button" class="contentStretch">stretch</button>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.container {</br>
+                  <div class="indent">align-content: flex-start <span class="commentaire">/*ou*/</span> flex-end <span class="commentaire">/*ou*/</span> center <span class="commentaire">/*ou*/</span> space-around <span class="commentaire">/*ou*/</span> space-between <span class="commentaire">/*ou*/</span> stretch;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryAlignContent.html"><button>Tester align-content !</button></a>
+        </p>
+      </section>
+
+    </article>
+
+    <script type="text/javascript">
+
+    $("#bouton1").on('click',function(){
+        $("#navBarre").animate({left: '0%'});
+         $("#bouton1").css({'display': 'none'});
+         $("#bouton2").css({'display': 'block'});
+    });
+
+    $("#bouton2").on('click',function(){
+        $("#navBarre").animate({left: '-175px'});
+        $("#bouton2").css({'display': 'none'});
+        $("#bouton1").css({'display': 'block'});
+    });
+
+    </script>
+    <script src="js/js.js">
+
+    </script>
+  </body>
+</html>

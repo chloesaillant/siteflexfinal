@@ -1,0 +1,8 @@
+header, .news figure, .ulbar, .infos, section, figcaption, .ourWorks{
+  display: flex;
+  border: 1px solid black;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                          enter your flex!
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/

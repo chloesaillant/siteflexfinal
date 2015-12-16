@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*:before,*:after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: Geneva,Arial,sans-serif;
+  background-color: rgb(211,209,204);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul,li{
+ list-style: none;
+}
+
+.container{
+  width: 100%;
+}
+
+header,section{
+  width: 90%;
+  margin: auto;
+}
+
+h2, .ulbar{
+  padding: 1em 0;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                          HEADER
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.logo{
+  width: 280px;
+  height: 60px;
+  background: url('../img/page-logo.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.navbar{
+  width: 40%;
+  background-color: rgb(51,51,51);
+}
+
+.infos{
+  margin: 2em 0;
+}
+
+.infos img{
+  width: 60%;
+}
+
+.infoCousin{
+  width: 30%;
+}
+
+.infoCousin p{
+  color: rgb(157,156,155);
+}
+
+header h2{
+  margin-bottom: 2em ;
+  color: rgb(51,51,51);
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                          section work
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/*XXXXXXXXXXXXXXXXXXXXXXX-- ourWorks--XXXXXXXXXXXXXXXXXXX*/
+section{
+  margin: 2em auto;
+}
+
+section h2{
+  color: white;
+  width: 100%;
+  margin: 1em 0;
+  background-color: rgb(51,51,51);
+}
+
+figure{
+  margin-top: 2em;
+}
+
+figure img{
+  width: 100%;
+}
+
+.ourWorks figcaption{
+  background-color: white;
+  height: 5em;
+}
+
+#batman{
+  order: 1;
+  flex-grow: 2;
+}
+
+#trooper{
+  order: 2;
+  align-self: center;
+}
+
+#mysterio{
+  order: 3;
+  align-self: center;
+}
+
+#vador{
+  order: 4;
+  flex-grow: 2;
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXX-- news--XXXXXXXXXXXXXXXXXXX*/
+
+.news{
+  width: 48%;
+  margin: 2em 0;
+}
+
+.news figure img{
+  width: 60%;
+}
+
+.news figcaption{
+  width: 35%;
+}
+
+.news p{
+  margin: 1.5em;
+}
+
+.video{
+  width: 100%;
+  height: 250px;
+  background: url('../img/blog-2.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+span{
+  color: rgb(211,74,32);
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                          solution flex
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/*header{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ulbar{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.infos{
+  justify-content: space-around;
+  align-items: center;
+}
+
+section{
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+figcaption{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourWorks{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news figure{
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}*/

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<<<<<<< HEAD
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Flex Order</title>
+    <link rel="stylesheet" media="screen">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <style type="text/css">@import "../stylegeneral.css"; @import "iframe.css";</style>
+=======
+    <meta charset="utf-8">
+    <title>Flex Order</title>
+    <link rel="stylesheet" href="iframe.css" media="screen">
+>>>>>>> b8b04e905e9da9bf37149261dc45157253d5d0ee
+  </head>
+  <body>
+    <header>
+      <h2>Try it yourself!</h2>
+    </header>
+
+    <div id="container">
+    <div id="conteneurCodeBrut">
+      <form>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// CODE BRUT /////////////////////-->
+        <textarea id="codeBrut" name="name" rows="32" cols="60" autocomplete="off" spellcheck="false" wrap="logical">
+
+          <!DOCTYPE html>
+        <html>
+        <head>
+        <style media="screen">
+        .displayFlex{
+          height: 400px;
+          display: flex;
+          border: solid black;
+          justify-content: center;
+        }
+
+        .red{
+          background-color: #FE3500;
+          width: 50px;
+          height:50px;
+        }
+        .green{
+          background-color: #FDD016;
+          width: 50px;
+          height:50px;
+          order: 4;
+        }
+        .blue{
+          background-color: #E69127;
+          width: 50px;
+          height:50px;
+        }
+
+
+        .flexDirection{
+          border: solid black;
+          display: flex;
+        }
+        .Column{
+          flex-direction: column;
+        }
+        .properties{
+          display: inline-block;
+          vertical-align: top;
+          margin: 4px;
+        }
+
+        </style>
+
+        </head>
+        <body>
+
+          <div class="displayFlex">
+            <div class="red properties">1</div>
+            <div class="green properties">2</div>
+            <div class="green properties">3</div>
+            <div class="blue properties">4</div>
+          </div>
+
+        </body>
+        </html>
+
+
+
+
+        </textarea>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// FIN DU CODE BRUT ////////////-->
+
+
+      </form>
+      </div>
+      <button type="button" id="bouton" onclick="changeContenuIframe()"> Modifier >> </button>
+
+    <div id="resultat">
+
+    </div>
+    </div>
+    </div>
+    <script>
+      function changeContenuIframe(){
+          document.getElementById('resultat').innerHTML = "";
+          var codeBrut = document.getElementById('codeBrut').value;
+          var iframe = document.createElement('iframe');
+          resultat.appendChild(iframe);
+          iframe.classList.add("iframeSize");
+          iframe.contentWindow.document.open();
+          iframe.contentWindow.document.write(codeBrut);
+          iframe.contentWindow.document.close();
+      }
+      changeContenuIframe();
+
+
+    </script>
+  </body>
+</html>

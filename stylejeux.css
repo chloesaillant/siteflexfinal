@@ -1,0 +1,64 @@
+section.container {
+  justify-content: center;
+  text-align: center;
+  margin: 80px auto 6% auto;
+}
+
+#bloctitreressources h1 {
+  color: #B5B5B7;
+  font-weight: normal;
+  font-size: 3.2em;
+  text-align: center;
+}
+
+.boutonressources {
+  background-color: #252839;
+  color: white;
+  font-size: 0.8em;
+  margin: 7px;
+}
+
+.boutonressources:hover {
+  background-color: white;
+  color: #252839;
+  border: 2px solid #252839;
+  margin: 5px;
+}
+
+article.container {
+  flex-direction: column;
+}
+
+.bloccontenuressources {
+  margin-bottom: 80px;
+}
+
+.bloccontenuressources h2 {
+  color: #FDD016;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.bloccontenuressources p {
+  color: #677077;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  margin-left: 5%;
+  margin-top: 1.5%;
+  line-height: 2;
+}
+
+.bloccontenuressources a {
+  color: #252839;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+
+.bloccontenuressources a:hover {
+  margin-left: 6%;
+  font-weight: bold;
+}
+
+#ronflex{
+  width: 23vw;
+}

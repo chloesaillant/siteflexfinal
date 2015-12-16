@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>L'atelier des dés</title>
+    <link rel="stylesheet" media="screen">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <style type="text/css">@import "../stylegeneral.css"; @import "iframe.css";</style>
+  </head>
+  <body>
+    <header id="headerdes">
+      <h2>L'atelier des Dés</h2>
+    </header>
+
+    <div id='tryitLeaderboard'>
+      <div id='bloctexte'>
+      <p>Utilisez les propriétés flex "align-self" et "justify-content" pour recréer les 6 faces d'un dé.</p>
+
+      <p><strong><span>align-self:</span></strong> flex-start <span>//</span> flex-end <span>//</span> center <span>//</span> baseline</p>
+
+      <p><strong><span>justify-content:</span></strong> flex-start <span>//</span> flex-end <span>//</span> center <span>//</span> space-between <span>//</span> space-around</p>
+    </div>
+
+
+    <div id="image">
+    <img src="dice2.png"/>
+    </div>
+    </div>
+
+    <div id="container">
+    <div id="conteneurCodeBrut">
+      <form>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// CODE BRUT /////////////////////-->
+        <textarea id="codeBrut" name="name" rows="32" cols="60" autocomplete="off" spellcheck="false" wrap="logical">
+
+
+          <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+
+  <style media="screen">
+    .first-face {
+      display: flex;
+      justify-content:
+      align-items:
+    }
+    .second-face {
+      display: flex;
+      justify-content:
+    }
+    .second-face .pip:nth-of-type(2) {
+      align-self:
+    }
+    .third-face {
+      display: flex;
+      justify-content:
+    }
+    .third-face .pip:nth-of-type(2) {
+      align-self:
+    }
+    .third-face .pip:nth-of-type(3) {
+      align-self:
+    }
+    .fourth-face, .sixth-face {
+      display: flex;
+      justify-content:
+    }
+    .fourth-face .column, .sixth-face .column {
+      display: flex;
+      flex-direction: column;
+      justify-content:
+    }
+    .fifth-face {
+      display: flex;
+      justify-content:
+    }
+    .fifth-face .column {
+      display: flex;
+      flex-direction: column;
+      justify-content:
+    }
+    .fifth-face .column:nth-of-type(2) {
+      justify-content:
+    }
+    /* ******* OTHER STYLES ******* */
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: center;
+      flex-wrap: wrap;
+      align-content: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+    [class$="face"] {
+      margin: 16px;
+      padding: 4px;
+      background-color: #FDD016;
+      width: 104px;
+      height: 104px;
+      border-radius: 10%;
+    }
+    .pip {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin: 4px;
+      background-color: #252839;
+    }
+  </style>
+
+  </head>
+    <div class="first-face">
+    <span class="pip"></span>
+  </div>
+  <div class="second-face">
+    <span class="pip"></span>
+    <span class="pip"></span>
+  </div>
+  <div class="third-face">
+    <span class="pip"></span>
+    <span class="pip"></span>
+    <span class="pip"></span>
+  </div>
+  <div class="fourth-face">
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+  </div>
+  <div class="fifth-face">
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+  </div>
+  <div class="sixth-face">
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+  </div>
+
+    </body>
+  </html>
+
+
+
+        </textarea>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// FIN DU CODE BRUT ////////////-->
+
+
+      </form>
+      </div>
+      <button type="button" id="bouton" onclick="changeContenuIframe()"> Modifier >> </button>
+
+    <div id="resultat">
+
+    </div>
+    </div>
+    </div>
+    <script>
+      function changeContenuIframe(){
+          document.getElementById('resultat').innerHTML = "";
+          var codeBrut = document.getElementById('codeBrut').value;
+          var iframe = document.createElement('iframe');
+          resultat.appendChild(iframe);
+          iframe.classList.add("iframeSize");
+          iframe.contentWindow.document.open();
+          iframe.contentWindow.document.write(codeBrut);
+          iframe.contentWindow.document.close();
+      }
+      changeContenuIframe();
+
+
+    </script>
+  </body>
+</html>

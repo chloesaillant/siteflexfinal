@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<<<<<<< HEAD
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Puzzle RonFlex</title>
+    <link rel="stylesheet" media="screen">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <style type="text/css">@import "../stylegeneral.css"; @import "../tryit/iframe.css";</style>
+=======
+    <meta charset="utf-8">
+    <title>Puzzle RonFlex</title>
+    <link rel="stylesheet" href="iframe.css" media="screen">
+>>>>>>> b8b04e905e9da9bf37149261dc45157253d5d0ee
+  </head>
+  <body>
+    <header>
+      <h2>Reconstitue l'image de RonFlex!</h2>
+<<<<<<< HEAD
+      <img src="ronflex.jpg" style="height:18%; width:18%; margin-left:5%;">
+=======
+      <img src="Logo.png" alt="logo" style="height:10%; width:10%;">
+>>>>>>> b8b04e905e9da9bf37149261dc45157253d5d0ee
+    </header>
+
+    <div id="container">
+    <div id="conteneurCodeBrut">
+      <form>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// CODE BRUT /////////////////////-->
+        <textarea id="codeBrut" name="name" rows="32" cols="60" autocomplete="off" spellcheck="false" wrap="logical">
+
+          <!DOCTYPE html>
+  <html>
+  <head>
+  <style media="screen">
+  .displayFlex{
+    height: 60vw;
+<<<<<<< HEAD
+    width: 100vw;
+=======
+    width: 80vw;
+>>>>>>> b8b04e905e9da9bf37149261dc45157253d5d0ee
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-content : flex-start;
+    /*align-content : flex-end;*/
+    /*align-content : center;*/
+    /*align-content : stretch;*/
+    /*align-content : space-between;*/
+    /*align-content : space-around;*/
+  }
+
+
+
+  .properties{
+<<<<<<< HEAD
+    height: 200px;
+    width: 200px;
+=======
+    height: 150px;
+    width: 150px;
+>>>>>>> b8b04e905e9da9bf37149261dc45157253d5d0ee
+  }
+  .p1{
+    order: 1;
+  }
+  .p2{
+    order :2;
+  }
+  .p3{
+    order: 3;
+  }
+  .p4{
+    order: 4;
+  }
+  .p5{
+    order: 5;
+  }
+  .p6{
+    order: 6;
+  }
+
+
+  </style>
+
+  </head>
+  <body>
+
+    <div class="displayFlex">
+    </div>
+    <script type="text/javascript">
+    var divi;
+    var ImgUrl;
+    for (var i = 1; i < 7; i++) {
+      divi = document.createElement('div');
+      Boody = document.getElementsByClassName('displayFlex')[0];
+      Boody.appendChild(divi);
+      divi.className = 'properties p' + i;
+      ImgUrl = "url(Rf" + i + ".png" + ")";
+      divi.innerHTML = i;
+      console.log(ImgUrl);
+      divi.style.backgroundRepeat = "no-repeat";
+      divi.style.backgroundImage = ImgUrl;
+    };
+
+    </script>
+  </body>
+
+  </html>
+
+
+
+
+        </textarea>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// FIN DU CODE BRUT ////////////-->
+
+
+      </form>
+      </div>
+      <button type="button" id="bouton" onclick="changeContenuIframe()"> Modifier >> </button>
+
+    <div id="resultat">
+
+    </div>
+    </div>
+    </div>
+    <script>
+      function changeContenuIframe(){
+          document.getElementById('resultat').innerHTML = "";
+          var codeBrut = document.getElementById('codeBrut').value;
+          var iframe = document.createElement('iframe');
+          resultat.appendChild(iframe);
+          iframe.classList.add("iframeSize");
+          iframe.contentWindow.document.open();
+          iframe.contentWindow.document.write(codeBrut);
+          iframe.contentWindow.document.close();
+      }
+      changeContenuIframe();
+
+
+    </script>
+  </body>
+</html>

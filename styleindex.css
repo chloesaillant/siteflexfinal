@@ -1,0 +1,72 @@
+/*Style de l'index*/
+
+body {
+  background-color: #FDD016;
+}
+
+.container#mainpage {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#divtitre {
+  margin: 1% 5%;
+  margin-left: 8%;
+  text-align: center;
+  color: #252839;
+}
+
+#divintro {
+  margin: 5%;
+  color: #677077;
+}
+
+.container#mainpage h1 {
+  text-align: left;
+  font-size: 5em;
+}
+
+#soustitre {
+  font-weight: normal;
+  margin-left: 2%;
+  text-align: left;
+}
+
+#crochets {
+  font-size: 5em;
+  line-height: 0;
+  margin: 0 5% 0 0;
+  padding: 0;
+}
+
+.blocintro {
+  font-size: 0.8em;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#boutonindex {
+  color: #FDD016;
+  background-color: white;
+  margin: 40px auto;
+}
+
+#boutonindex:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 38px auto;
+}
+
+@media screen and (max-width:800px){
+  .container#mainpage {
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  #divtitre {
+    margin-top: 8%;
+  }
+}

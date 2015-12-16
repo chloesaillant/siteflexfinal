@@ -1,0 +1,117 @@
+section.container {
+  justify-content: center;
+  text-align: center;
+  margin: 80px auto 6% auto;
+}
+
+#bloctitreressources h1 {
+  color: #B5B5B7;
+  font-weight: normal;
+  font-size: 3.2em;
+}
+
+.boutonressources {
+  background-color: #252839;
+  color: white;
+  font-size: 0.8em;
+  margin: 7px;
+}
+
+.boutonressources:hover {
+  background-color: white;
+  color: #252839;
+  border: 2px solid #252839;
+  margin: 5px;
+}
+
+article.container {
+  flex-direction: column;
+}
+
+/*/////// Style différentes parties //////*/
+
+.bloccontenuressources, .screenshots {
+  margin-bottom: 8%;
+  margin-top: -60px;
+}
+
+.bloccontenuressources h2, .screenshots h2 {
+  color: #FDD016;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding-top: 60px;
+  top: -100px;
+}
+
+.bloccontenuressources p {
+  color: #677077;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  margin-left: 5%;
+  margin-top: 1.5%;
+  line-height: 2;
+}
+
+.bloccontenuressources a {
+  color: #252839;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+
+#linksansindent {
+  margin-left: auto;
+}
+
+.bloccontenuressources a:hover {
+  margin-left: 6%;
+  font-weight: bold;
+}
+
+p a img {
+  margin-bottom: -4px;
+}
+
+#ronflex {
+  width: 23vw;
+}
+
+#des {
+  width: 30vw;
+}
+
+#maquette {
+  width: 23vw;
+}
+
+/*/////////// Style sites flex ////////////////*/
+
+.screenshots a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  color: #252839;
+  transition: 0.5s;
+}
+
+.screenshots a:hover {
+  font-size: 1em;
+}
+
+#contenusitesflex {
+  margin: 2% 10%;
+  height: 155vh;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#contenusitesflex > div {
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid #DDDDDD;
+  padding: 1%;
+  margin: 1%;
+}
+
+.screenshots #contenusitesflex img {
+  max-width: 15vw;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Tout sur flex - Les items</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" media="screen" charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <style type="text/css">@import "stylegeneral.css"; @import "stylecontenu.css";</style>
+  </head>
+  <body>
+
+    <header class="container">
+      <p>
+        <h3 class="titrenav">Display:flex;</h3>
+        <div class="container">
+          <ul class="container">
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a id="encours" href="#">Tout sur flex</a>
+                <ul>
+                  <li><a href="contenucontainer.html">Flex sur un container</a></li>
+                  <li><a href="contenuitems.html">Flex sur un item</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="ressources.html">Ressources</a>
+            </li>
+            <li>
+              <a href="Jeux.html">Exercices</a>
+            </li>
+          </ul>
+        </div>
+      </p>
+    </header>
+
+    <aside class="container" id="navBarre">
+      <div class="container">
+      <h4>Flex sur un container</h4>
+      <ul id="listeNonOrdonee">
+        <li class='elementListe'><a href="contenucontainer.html#display">display</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexdirection">flex-direction</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexwrap">flex-wrap</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#flexflow">flex-flow</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#justifycontent">justify-content</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#alignitems">align-items</a></li>
+        <li class='elementListe'><a href="contenucontainer.html#aligncontent">align-content</a></li>
+      </ul>
+      <h4>Flex sur un item</h4>
+      <ul id="listeNonOrdonee">
+        <li class='elementListe'><a href="contenuitems.html#order">order</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexgrow">flex-grow</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexshrink">flex-shrink</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flexbasis">flex-basis</a></li>
+        <li class='elementListe'><a href="contenuitems.html#flex">flex</a></li>
+        <li class='elementListe'><a href="contenuitems.html#alignself">align-self</a></li>
+      </ul>
+      </div>
+      <button type="button" id="bouton1">>></button>
+      <button type="button" id="bouton2"><<</button>
+    </aside>
+
+    <h1>Flex sur un item</h1>
+    <article class="container">
+
+      <section class="container boitecontenu" id="order">
+        <h3>Order</h3>
+        <p class="pcontenu">
+          Order permet de changer l'ordre de positionnement d'un item, et ce, sans avoir à toucher au HTML.
+        </p>
+
+        <div class="boitedemo container">
+          <div id="order"class="demo">
+            <div id="redO" class="red">bloc 1</div>
+            <div id="orangeO" class="orange">bloc 2</div>
+            <div id="yellowO" class="yellow">bloc 3</div>
+          </div>
+          <div class="buttons">
+            <ul class="orderColors">
+              <li>
+                <p> Red order: </p>
+                <button class="red1" type="button" name="button">1</button>
+                <button class="red2" type="button" name="button">2</button>
+                <button class="red3" type="button" name="button">3</button>
+              </li>
+              <li>
+                <p> Orange order: </p>
+                <button class="orange1" type="button" name="button">1</button>
+                <button class="orange2" type="button" name="button">2</button>
+                <button class="orange3" type="button" name="button">3</button>
+              </li>
+              <li>
+                <p> Yellow order: </p>
+                <button class="yellow1" type="button" name="button">1</button>
+                <button class="yellow2" type="button" name="button">2</button>
+                <button class="yellow3" type="button" name="button">3</button>
+              </li>
+
+              <li><button class="resetO" type="button" name="button">Reset order</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.item {</br>
+                  <div class="indent">order: nombre <span class="commentaire">/*qui peut être négatif*/</span>;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryOrder.html"><button>Tester order !</button></a>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="flexgrow">
+        <h3>Flex-grow</h3>
+        <p class="pcontenu">
+          Permet de définir la capacité pour un élément à s'étirer dans l'espace restant après distribution entre chaque item.
+        </p>
+
+        <div class="boitedemo container">
+          <div id="flexGrow"class="demo">
+            <div id="redGrow" class="red">bloc 1</div>
+            <div id="orangeGrow" class="orange">bloc 2</div>
+            <div id="yellowGrow" class="yellow">bloc 3</div>
+          </div>
+          <div class="buttons">
+            <ul class="growColors">
+              <li>
+                <p> Red grow: </p>
+                <button class="redG1" type="button" name="button">1</button>
+                <button class="redG2" type="button" name="button">2</button>
+              </li>
+              <li>
+                <p> Orange grow: </p>
+                <button class="orangeG1" type="button" name="button">1</button>
+                <button class="orangeG2" type="button" name="button">2</button>
+              </li>
+              <li>
+                <p> Yellow grow: </p>
+                <button class="yellowG1" type="button" name="button">1</button>
+                <button class="yellowG2" type="button" name="button">2</button>
+              </li>
+
+              <li><button class="resetG" type="button" name="button">Reset grow</button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.item {</br>
+                  <div class="indent">flex-grow: nombre <span class="commentaire">/*par défaut à 0*/</span>;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryFlexGrow.html"><button>Tester flex-grow !</button></a>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="flexshrink">
+        <h3>Flex-shrink</h3>
+        <p class="pcontenu">
+          Permet de définir la capacité pour un élément à se contracter si nécessaire dans l'espace restant après distribution entre chaque item.
+        </p>
+
+        <div class="boitedemo container">
+          <div id="fShrink"class="demo">
+            <div id="redS" class="red">bloc 1</div>
+            <div id="orangeS" class="orange">shrink</div>
+            <div id="yellowS" class="yellow">bloc 3</div>
+          </div>
+          <div class="buttons">
+          <button class="shrink" type="button" name="button">shrink</button>
+          <button class="resetShrink" type="button" name="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.item {</br>
+                  <div class="indent">flex-shrink: nombre <span class="commentaire">/*par défaut à 1*/</span>;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryFlexShrink.html"><button>Tester flex-shrink !</button></a>
+        </p>
+      </section>
+
+      <section class="container boitecontenu" id="flexbasis">
+        <h3>Flex-basis</h3>
+        <p class="pcontenu">
+          Définit la taille initiale de l'élément avant que l'espace restant ne soit distribué aux autres items.
+        </p>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.item {</br>
+                  <div class="indent">flex-basis: longeur <span class="commentaire">/*ou*/</span> auto <span class="commentaire">/*par défaut en mode auto. La longueur peut être en %, en px, ...*/</span>;</div>
+                }
+          </div>
+        </div>
+
+      </section>
+
+      <section class="container boitecontenu" id="flex">
+        <h3>Flex</h3>
+        <p class="pcontenu">
+          Flex permet de déclarer en une seule ligne les valeurs de flex-grow, flex-shrink (optionnel) et flex-basis dans le CSS.
+        </p>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.item {</br>
+                  <div class="indent">flex: none <span class="commentaire">/*ou*/</span> valeur de flex-grow <span class="commentaire">/*et*/</span> valeur de flex-shrink <span class="commentaire">/*et*/</span> valeur de flex-basis;</div>
+                }
+          </div>
+        </div>
+      </section>
+
+      <section class="container boitecontenu" id="alignself">
+        <h3>Align-self</h3>
+        <p class="pcontenu">
+          Align-self permet de gérer l'alignement d'un seul item indépendamment des autres. Ses propriétés sont les mêmes que celles d'align-items.
+        </p>
+
+        <div class="boitedemo container">
+          <div id="alignSelf"class="demo">
+            <div id="redSelf" class="red"><p>Accendente poenae quod.</p></div>
+            <div id="orangeSelf" class="orange">
+              Align Self
+            </div>
+            <div id="yellowSelf" class="yellow"><p>Ob haec aliis aliquando et quoque.</p></div>
+          </div>
+          <div class="buttons">
+            <button class="autoself" type="button" name="button">Auto</button>
+            <button class="startself" type="button" name="button">Flex-start</button>
+            <button class="endself" type="button" name="button">Flex-end</button>
+            <button class="baseself" type="button" name="button">Baseline</button>
+            <button class="centerself" type="button" name="button">Center</button>
+            <button class="stretchself" type="button" name="button">Stretch</button>
+          </div>
+        </div>
+
+        <div class="container boitecss">
+          <img src="cssimg.png"/>
+          <div class="csscontenu">.item {</br>
+                  <div class="indent">align-self: auto <span class="commentaire">/*ou*/</span> flex-start <span class="commentaire">/*ou*/</span> flex-end <span class="commentaire">/*ou*/</span> center <span class="commentaire">/*ou*/</span> baseline <span class="commentaire">/*ou*/</span> stretch;</div>
+                }
+          </div>
+        </div>
+        <p class="tryit">
+          <a class="tryit" target="_blank" href="tryit/tryAlignSelf.html"><button>Tester align-self !</button></a>
+        </p>
+      </section>
+
+    </article>
+
+    <script type="text/javascript">
+
+    $("#bouton1").on('click',function(){
+        $("#navBarre").animate({left: '0%'});
+         $("#bouton1").css({'display': 'none'});
+         $("#bouton2").css({'display': 'block'});
+    });
+
+    $("#bouton2").on('click',function(){
+        $("#navBarre").animate({left: '-175px'});
+        $("#bouton2").css({'display': 'none'});
+        $("#bouton1").css({'display': 'block'});
+    });
+
+    </script>
+  </body>
+  <script src="js/items_js.js"></script>
+</html>

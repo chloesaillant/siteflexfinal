@@ -1,0 +1,112 @@
+/*Style général*/
+
+/*PALETTE
+Jaune : #FDD016
+Gris foncé : #252839
+Gris moyen : #677077
+Gris clair : #B5B5B7
+Blanc : #FFFFFF
+*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Fjalla One', 'Helvetica', 'Arial', sans-serif;
+}
+
+::selection {
+  background: rgba(253,208,22, 0.7);
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: 60px;
+  padding: 3px 15px;
+}
+
+/*Style barre de navigation*/
+
+header.container {
+  align-items: center;
+  background-color: #FDD016;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.titrenav {
+  color: #252839;
+  margin: 5px 0 5px 7px;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+header.container a {
+  color: white;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+header.container a:hover {
+  color: #B5B5B7;
+}
+
+#encours {
+  color: #677077;
+}
+
+/*Début style liste déroulante*/
+
+header.container ul li {
+  list-style-type: none;
+}
+
+header.container ul li ul {
+  display: none;
+  position: absolute;
+}
+
+header.container ul li ul li {
+  padding-top: 10px;
+}
+
+header.container ul li ul li a {
+  color: #252839;
+}
+
+header.container ul li:hover ul {
+  display: block;
+}
+
+header.container ul li ul li a:hover {
+  color: #FDD016;
+}
+
+/*Fin style liste déroulante*/
+
+/*Style petit écran*/
+
+@media screen and (max-width:600px){
+  header.container a {
+    margin-left: 15px;
+  }
+}

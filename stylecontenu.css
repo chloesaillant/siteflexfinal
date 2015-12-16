@@ -1,0 +1,296 @@
+h1 {
+  color: #B5B5B7;
+  font-weight: normal;
+  font-size: 40px;
+  margin-top: 80px;
+  margin-bottom: -12px;
+  margin-left: 8%;
+  transition: 1s;
+}
+
+article {
+  flex-direction: column;
+  background-color: #B5B5B7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0 7%;
+  padding: 3%;
+}
+
+section {
+  flex-direction: column;
+  margin-bottom: 8%;
+  margin-top: -60px;
+}
+
+section h3 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 1%;
+  padding-top: 60px;
+  top: -100px;
+}
+
+.boitecontenu p {
+  margin-bottom: 1%;
+}
+
+.pcontenu {
+  font-family: 'Roboto', sans-serif;
+  color: #252839;
+  font-size: 0.9em;
+}
+
+.tryit {
+  text-align: center;
+}
+
+.tryit button {
+  background-color: white;
+  color: #B5B5B7;
+  margin: 3px;
+}
+
+.tryit button:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 1px;
+}
+
+.boitecss {
+  margin: 1% 15%;
+  margin-bottom: 2%;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.boitecss img {
+  margin-top: 3px;
+  margin-right: -3px;
+}
+
+.csscontenu {
+  background-color: #252839;
+  color: white;
+  font-family: monospace;
+  line-height: 2;
+  height: 120px;
+  width: 100%;
+  overflow: auto;
+  padding: 2%;
+}
+
+.indent {
+  margin-left: 25px;
+}
+
+.commentaire {
+  color: #677077;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Style menu côté
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#navBarre{
+  align-items: center;
+  position: fixed;
+  left: -175px;
+}
+#navBarre div {
+  height: 100vh;
+  flex-direction: column;
+  margin-top: -40px;
+  background-color: rgba(37,40,57,0.7);
+  padding: 20px;
+}
+h4 {
+  text-align: right;
+  color: #B5B5B7;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+#bouton1{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 60px;
+  padding: 15px;
+  background-color: #677077;
+  color: #B5B5B7;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+#bouton2{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 60px;
+  padding: 15px;
+  background-color: #677077;
+  color: #B5B5B7;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: none;
+}
+#listeNonOrdonee {
+  text-align: right;
+  color: white;
+  margin-bottom: 25px;
+  list-style: none;
+}
+.elementListe {
+  padding-bottom: 2%;
+  margin: 5%;
+}
+.elementListe:hover:after {
+  content: "<";
+}
+.elementListe a {
+  font-family: 'Roboto',sans-serif;
+  font-weight: normal;
+  font-size: 0.9em;
+  transition: 0.5s;
+}
+.elementListe a:hover {
+  font-weight: bold;
+  margin-right: 4%;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Style petit écran
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media screen and (max-width:600px){
+  h1 {
+    font-size: 30px;
+    margin-bottom: -9px;
+    margin-left: 10%;
+  }
+}
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.boitedemo {
+  justify-content: center;
+  padding: 2%;
+}
+
+
+.demo{
+  background-color: white;
+  width: 50%;
+  height: 10em;
+  display: flex;
+}
+
+.demo div{
+  background-color: #FDD016;
+  border-radius: 5px;
+  color: #677077;
+  padding: 1%;
+  width: 10%;
+  text-align: center;
+}
+
+.boitedemo .buttons{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 2%;
+  width: 15%;
+}
+
+.boitedemo .buttons button {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: 'Roboto', sans-serif;
+  color: #252839;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+#fAlignC div{
+  height: auto;
+}
+
+.boitedemo ul, .boitedemo li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                     ---Order colors, grow et shrink---
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+#flexGrow, #order {
+  background-color: transparent;
+}
+
+.buttons .orderColors, .buttons .growColors {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons .orderColors li, .buttons .growColors li {
+  margin-bottom: 2%;
+}
+
+.buttons .orderColors li p, .buttons .orderColors li button, .buttons .growColors li p, .buttons .growColors li button {
+  margin-right: 5%;
+}
+
+.buttons .orderColors li p, .buttons .growColors li p {
+  color: #677077;
+}
+
+#redO, #redGrow {
+  background-color: #fd2216;
+}
+
+#orangeO, #orangeGrow {
+  background-color: #fd5d16;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                     ---Shrink---
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#fShrink div{
+  width: 250px;
+  margin: auto;
+}
+
+#orangeS{
+  flex-shrink: 2;
+}
+
+.taille{
+  animation-name: pop;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes pop{
+  from{width: 600px;}
+  to{width: 400px;}
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                     ---Align self---
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#alignSelf div{
+  width: 20%;
+  height: 80px;
+}

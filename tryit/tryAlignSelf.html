@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<<<<<<< HEAD
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Align self</title>
+    <link rel="stylesheet" media="screen">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <style type="text/css">@import "../stylegeneral.css"; @import "iframe.css";</style>
+=======
+    <meta charset="utf-8">
+    <title>Align self</title>
+    <link rel="stylesheet" href="iframe.css" media="screen">
+>>>>>>> b8b04e905e9da9bf37149261dc45157253d5d0ee
+  </head>
+  <body>
+    <header>
+      <h2>Try it yourself!</h2>
+    </header>
+
+    <div id="container">
+    <div id="conteneurCodeBrut">
+      <form>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// CODE BRUT /////////////////////-->
+        <textarea id="codeBrut" name="name" rows="32" cols="60" autocomplete="off" spellcheck="false" wrap="logical">
+
+          <!DOCTYPE html>
+            <html>
+                <head>
+                  <style media="screen">
+
+                  .flex {
+                      display: flex;
+                      height : 100px;
+                      width: 400px;
+                      border: solid grey 1px;
+
+                  }
+                  .red, .green, .blue, .orange, .purple{
+                    background-color: #FE3500;
+                    width: 50px;
+                    display: flex;
+                  margin : 0 20px;
+                  padding : 20px;
+                  }
+                  .green{
+                    background-color: #FDD016;
+                  }
+                  .blue{
+                    background-color: #E69127;
+                  }
+                  .orange{
+                    background-color: #F7B21D;
+                  }
+                  .purple{
+                    background-color: #F7782F;
+                  }
+
+                  .flex-start {
+                    border: solid black;
+                    align-self: flex-start;
+                  }
+                  .flex-end {
+                    border: solid black;
+                    align-self: flex-end;
+                  }
+                  .center {
+                    border: solid black;
+                    align-self: center;
+                  }
+                  .baseline {
+                    border: solid black;
+                    align-self: baseline;
+                  }
+                  .stretch {
+                    border: solid black;
+                    align-self: stretch;
+                  }
+
+
+                  </style>
+
+                  </head>
+                  <body>
+                    <div class="flex">
+                      <div class="red flex-start"></div>
+                      <div class="green flex-end"></div>
+                      <div class="blue center"></div>
+                      <div class="orange baseline"></div>
+                      <div class="purple stretch"></div>
+                    </div>
+
+
+
+                </body>
+              </html>
+
+
+
+
+        </textarea>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// FIN DU CODE BRUT ////////////-->
+
+
+      </form>
+      </div>
+      <button type="button" id="bouton" onclick="changeContenuIframe()"> Modifier >> </button>
+
+    <div id="resultat">
+
+    </div>
+    </div>
+    </div>
+    <script>
+      function changeContenuIframe(){
+          document.getElementById('resultat').innerHTML = "";
+          var codeBrut = document.getElementById('codeBrut').value;
+          var iframe = document.createElement('iframe');
+          resultat.appendChild(iframe);
+          iframe.classList.add("iframeSize");
+          iframe.contentWindow.document.open();
+          iframe.contentWindow.document.write(codeBrut);
+          iframe.contentWindow.document.close();
+      }
+      changeContenuIframe();
+
+
+    </script>
+  </body>
+</html>
