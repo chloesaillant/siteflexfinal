@@ -46,16 +46,14 @@ section h3 {
 }
 
 .tryit button {
-  background-color: white;
-  color: #B5B5B7;
+  color: white;
+  background-color: #FD5D16;
   margin: 3px;
 }
 
 .tryit button:hover {
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
-  margin: 1px;
+  background-color: white;
+  color: #FD5D16;
 }
 
 .boitecss {
@@ -111,34 +109,29 @@ h4 {
   margin-bottom: 15px;
 }
 #bouton1{
-  font-family: inherit;
-  font-size: inherit;
   border: none;
   border-top-left-radius: 0;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 60px;
-  padding: 15px;
+  padding: 10px;
   background-color: #677077;
-  color: #B5B5B7;
-  font-size: 1.2em;
-  font-weight: bold;
   display: block;
 }
 #bouton2{
-  font-family: inherit;
-  font-size: inherit;
   border: none;
   border-top-left-radius: 0;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 60px;
-  padding: 15px;
+  padding: 10px;
   background-color: #677077;
-  color: #B5B5B7;
-  font-size: 1.2em;
-  font-weight: bold;
   display: none;
+}
+#boutonmenu {
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 2px;
 }
 #listeNonOrdonee {
   text-align: right;

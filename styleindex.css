@@ -49,16 +49,16 @@ body {
 }
 
 #boutonindex {
-  color: #FDD016;
+  color: #FD5D16;
   background-color: white;
   margin: 40px auto;
 }
 
 #boutonindex:hover {
   color: white;
-  background-color: transparent;
-  border: 2px solid white;
-  margin: 38px auto;
+  background-color: #FD5D16;
+  /*border: 2px solid white;*/
+  /*margin: 38px auto;*/
 }
 
 @media screen and (max-width:800px){
