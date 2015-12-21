@@ -32,7 +32,7 @@
               <a href="ressources.html">Ressources</a>
             </li>
             <li>
-              <a href="Jeux.html">Exercices</a>
+              <a href="Jeux.html" id="lienexercice">Exercices</a>
             </li>
           </ul>
         </div>
@@ -65,10 +65,10 @@
       <button type="button" id="bouton2"><img id="boutonmenu" src="barremenu.png"/></button>
     </aside>
 
-    <h1>Flex sur un item</h1>
+    <h1 id="order">Flex sur un item</h1>
     <article class="container">
 
-      <section class="container boitecontenu" id="order">
+      <section class="container boitecontenu">
         <h3>Order</h3>
         <p class="pcontenu">
           Order permet de changer l'ordre de positionnement d'un item, et ce, sans avoir à toucher au HTML.
@@ -113,12 +113,12 @@
                 }
           </div>
         </div>
-        <p class="tryit">
+        <p class="tryit" id="flexgrow">
           <a class="tryit" target="_blank" href="tryit/tryOrder.html"><button>Tester order !</button></a>
         </p>
       </section>
 
-      <section class="container boitecontenu" id="flexgrow">
+      <section class="container boitecontenu">
         <h3>Flex-grow</h3>
         <p class="pcontenu">
           Permet de définir la capacité pour un élément à s'étirer dans l'espace restant après distribution entre chaque item.
@@ -160,12 +160,12 @@
                 }
           </div>
         </div>
-        <p class="tryit">
+        <p class="tryit" id="flexshrink">
           <a class="tryit" target="_blank" href="tryit/tryFlexGrow.html"><button>Tester flex-grow !</button></a>
         </p>
       </section>
 
-      <section class="container boitecontenu" id="flexshrink">
+      <section class="container boitecontenu">
         <h3>Flex-shrink</h3>
         <p class="pcontenu">
           Permet de définir la capacité pour un élément à se contracter si nécessaire dans l'espace restant après distribution entre chaque item.
@@ -190,12 +190,12 @@
                 }
           </div>
         </div>
-        <p class="tryit">
+        <p class="tryit" id="flexbasis">
           <a class="tryit" target="_blank" href="tryit/tryFlexShrink.html"><button>Tester flex-shrink !</button></a>
         </p>
       </section>
 
-      <section class="container boitecontenu" id="flexbasis">
+      <section class="container boitecontenu">
         <h3>Flex-basis</h3>
         <p class="pcontenu">
           Définit la taille initiale de l'élément avant que l'espace restant ne soit distribué aux autres items.
@@ -208,10 +208,10 @@
                 }
           </div>
         </div>
-
+        <div id="flex"></div>
       </section>
 
-      <section class="container boitecontenu" id="flex">
+      <section class="container boitecontenu">
         <h3>Flex</h3>
         <p class="pcontenu">
           Flex permet de déclarer en une seule ligne les valeurs de flex-grow, flex-shrink (optionnel) et flex-basis dans le CSS.
@@ -224,9 +224,10 @@
                 }
           </div>
         </div>
+        <div id="alignself"></div>
       </section>
 
-      <section class="container boitecontenu" id="alignself">
+      <section class="container boitecontenu">
         <h3>Align-self</h3>
         <p class="pcontenu">
           Align-self permet de gérer l'alignement d'un seul item indépendamment des autres. Ses propriétés sont les mêmes que celles d'align-items.

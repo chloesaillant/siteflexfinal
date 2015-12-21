@@ -113,4 +113,14 @@ header.container ul li ul li a:hover {
   header.container a {
     margin-left: 15px;
   }
+
+}
+
+@media screen and (max-width:550px){
+  header.container {
+    flex-direction: column;
+  }
+  #lienexercice {
+    display: none;
+  }
 }

@@ -62,11 +62,25 @@ body {
 }
 
 @media screen and (max-width:800px){
+  .container#mainpage h1 {
+    font-size: 3em;
+  }
   .container#mainpage {
     flex-wrap: wrap;
     align-content: flex-start;
   }
   #divtitre {
     margin-top: 8%;
+  }
+  .blocintro {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .blocintro {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

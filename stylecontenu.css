@@ -4,7 +4,7 @@ h1 {
   font-size: 40px;
   margin-top: 80px;
   margin-bottom: -12px;
-  margin-left: 8%;
+  margin-left: 8vw;
   transition: 1s;
 }
 
@@ -19,20 +19,20 @@ article {
 
 section {
   flex-direction: column;
-  margin-bottom: 8%;
-  margin-top: -60px;
+  margin-bottom: 8vh;
+  /*margin-top: -60px;*/
 }
 
 section h3 {
   color: white;
   font-size: 1.3em;
-  margin-bottom: 1%;
-  padding-top: 60px;
-  top: -100px;
+  margin-bottom: 2vh;
+  /*padding-top: 60px;
+  top: -100px;*/
 }
 
 .boitecontenu p {
-  margin-bottom: 1%;
+  margin-bottom: 2vh;
 }
 
 .pcontenu {
@@ -57,8 +57,8 @@ section h3 {
 }
 
 .boitecss {
-  margin: 1% 15%;
-  margin-bottom: 2%;
+  margin: 1vh 15%;
+  margin-bottom: 3vh;
   flex-direction: row;
   align-items: flex-start;
 }
@@ -204,9 +204,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 }
 
 .boitedemo .buttons button {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   font-family: 'Roboto', sans-serif;
+  background-color: #DDDDDD;
   color: #252839;
   font-weight: bold;
   font-size: 0.8em;
@@ -286,4 +287,12 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 #alignSelf div{
   width: 20%;
   height: 80px;
+}
+
+
+@media screen and (max-width:600px) {
+  .boitedemo, .tryit, #navBarre {
+    display: none;
+  }
+
 }

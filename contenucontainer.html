@@ -31,7 +31,7 @@
               <a href="ressources.html">Ressources</a>
             </li>
             <li>
-              <a href="Jeux.html">Exercices</a>
+              <a href="Jeux.html" id="lienexercice">Exercices</a>
             </li>
           </ul>
         </div>
@@ -64,10 +64,10 @@
       <button type="button" id="bouton2"><img id="boutonmenu" src="barremenu.png"/></button>
     </aside>
 
-    <h1>Flex sur un container</h1>
+    <h1 id="display">Flex sur un container</h1>
     <article class="container">
 
-      <section class="container boitecontenu" id="display">
+      <section class="container boitecontenu">
         <h3>Display</h3>
         <p class="pcontenu">
           Display:flex permet "d'activer" le mode flex sur un container. Le container peut être tout type d'élément, que ce soit div, article, ul, li, etc.
@@ -80,9 +80,10 @@
                 }
           </div>
         </div>
+        <div id="flexdirection"></div>
       </section>
 
-      <section class="container boitecontenu" id="flexdirection">
+      <section class="container boitecontenu">
         <h3>Flex-direction</h3>
         <p class="pcontenu">
           Cette propriété que l'on applique au flex-container permet de choisir sa direction, en colonne (vertical) ou en rang (horizontal), en sens normal (de gauche à droite et de haut en bas) ou inversé (de droite à gauche et de bas en haut).
@@ -105,12 +106,12 @@
                 }
           </div>
         </div>
-        <p class="tryit">
+        <p class="tryit" id="flexwrap">
           <a class="tryit" target="_blank" href="tryit/tryFlexDirection.html"><button>Tester flex-direction !</button></a>
         </p>
       </section>
 
-      <section class="container boitecontenu container" id="flexwrap">
+      <section class="container boitecontenu container">
         <h3>Flex-wrap</h3>
         <p class="pcontenu">
           Flex-wrap permet d'indiquer au conteneur si les items qu'il contient doivent automatiquement aller à la ligne ou non, dans le sens normal (les items qui débordent iront se placer en dessous) ou inversé (les items se placeront au dessus).
@@ -132,12 +133,12 @@
                 }
           </div>
         </div>
-        <p class="tryit">
+        <p class="tryit" id="flexflow">
           <a class="tryit" target="_blank" href="tryit/tryFlexWrap.html"><button>Tester flex-wrap !</button></a>
         </p>
       </section>
 
-      <section class="container boitecontenu" id="flexflow">
+      <section class="container boitecontenu">
         <h3>Flex-flow</h3>
         <p class="pcontenu">
           Flex-flow permet de déclarer en une seule ligne les valeurs de flex-direction et flex-wrap dans le CSS.
@@ -150,9 +151,10 @@
                 }
           </div>
         </div>
+        <div id="justifycontent"></div>
       </section>
 
-      <section class="container boitecontenu" id="justifycontent">
+      <section class="container boitecontenu">
         <h3>Justify-content</h3>
         <p class="pcontenu">
           Cette propriété permet de modifier le positionnement vertical des items, mais aussi leur répartition dans l'espace du container.
@@ -176,12 +178,12 @@
                 }
           </div>
         </div>
-        <p class="tryit">
+        <p class="tryit" id="alignitems">
           <a class="tryit" target="_blank" href="tryit/tryFlexJustify.html"><button>Tester justify-content !</button></a>
         </p>
       </section>
 
-      <section class="container boitecontenu" id="alignitems">
+      <section class="container boitecontenu">
         <h3>Align-items</h3>
         <p class="pcontenu">
           Cette propriété permet de modifier le positionnement horizontal des items, mais aussi leur répartition dans l'espace du container.
@@ -205,12 +207,12 @@
                 }
           </div>
         </div>
-        <p class="tryit">
+        <p class="tryit" id="aligncontent">
           <a class="tryit" target="_blank" href="tryit/tryAlignItem.html"><button>Tester align-items !</button></a>
         </p>
       </section>
 
-      <section class="container boitecontenu" id="aligncontent">
+      <section class="container boitecontenu">
         <h3>Align-content</h3>
         <p class="pcontenu">
           Quand il y a plusieurs lignes d'items dans le container, align-content permet de distribuer l'espace restant entre ces différentes lignes d'items.
