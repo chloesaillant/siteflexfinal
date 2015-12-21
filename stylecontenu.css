@@ -294,5 +294,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
   .boitedemo, .tryit, #navBarre {
     display: none;
   }
+  .boitecss {
+    margin: 1vh 5%;
+  }
+  .boitecss img {
+    width: 6%;
+  }
 
 }
