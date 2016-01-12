@@ -30,17 +30,18 @@ article.container {
 
 /*/////// Style différentes parties //////*/
 
+.bloccontenuressources {
+  padding-bottom: 10vh;
+}
+
 .bloccontenuressources, .screenshots {
   margin-bottom: 8%;
-  margin-top: -60px;
 }
 
 .bloccontenuressources h2, .screenshots h2 {
   color: #FDD016;
   font-size: 2.5em;
   font-weight: normal;
-  padding-top: 60px;
-  top: -100px;
 }
 
 .bloccontenuressources p {
@@ -66,6 +67,24 @@ article.container {
   margin-left: 6%;
   font-weight: bold;
 }
+#boutonmaquette, #screenmaquette {
+  margin-left: 0;
+}
+
+#blocscreen button {
+  margin-left: 10%;
+}
+
+#boutonmaquette:hover , #screenmaquette:hover {
+  margin-left: 0;
+  font-weight: light;
+}
+
+#blocscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 p a img {
   margin-bottom: -4px;
@@ -82,7 +101,6 @@ p a img {
 #maquette {
   width: 23vw;
 }
-
 /*/////////// Style sites flex ////////////////*/
 
 .screenshots a {

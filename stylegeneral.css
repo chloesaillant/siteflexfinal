@@ -111,7 +111,7 @@ header.container ul li ul li a:hover {
 
 @media screen and (max-width:600px){
   header.container a {
-    margin-left: 15px;
+    margin-left: 7px;
   }
 
 }

@@ -133,6 +133,14 @@ h4 {
   margin-right: 5px;
   margin-top: 2px;
 }
+#pagesuivante {
+  background-color: white;
+  color: #FD5D16;
+}
+#pagesuivante:hover {
+  background-color: #FD5D16;
+  color: white;
+}
 #listeNonOrdonee {
   text-align: right;
   color: white;
